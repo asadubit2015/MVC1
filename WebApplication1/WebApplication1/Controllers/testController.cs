@@ -13,5 +13,9 @@ namespace WebApplication1.Controllers
         {
             return "University Of karachi";
         }
+        public ActionResult getview()
+        {
+            return View("MyView");
+        }
     }
 }
