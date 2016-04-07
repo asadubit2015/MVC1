@@ -10,6 +10,5 @@ namespace WebApplication1.ViewModels
         public string name{get;set;}
         public string salary { get; set; }
         public string salary_color { get; set; }
-        public string user { get; set; }
     }
 }

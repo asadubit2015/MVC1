@@ -1,5 +1,5 @@
 ﻿@using WebApplication1.ViewModels
-@model EmployeeViewModel
+@model EmployeeListViewModel
 @{
     Layout = null;
 }
@@ -12,13 +12,21 @@
     <title>MyView</title>
 </head>
 <body>
+    <b>Hello @Model.UserName</b>
     <div> 
-        <b>Hello @Model.user</b> <br />
-        Employee Name: @Model.name<br />
-      <span style="background-color:@Model.salary_color">
-          Employee Salary: @Model.salary.ToString();
-      </span>
-
+        <table>
+            <tr>
+                <th>Employee Name</th>
+                <th>Employee Salary</th>
+            </tr>
+            @foreach (EmployeeViewModel list in Model.Employees)
+            {
+                <tr>
+                    <td>@list.name</td>
+                    <td style="background-color:@list.salary_color"> @list.salary</td>
+                </tr> 
+            }
+        </table>
     </div>
 </body>
 </html>
