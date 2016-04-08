@@ -9,6 +9,7 @@ namespace WebApplication1.Controllers
     public class HomeController : Controller
     {
 int a=0;
+int b=0;
         public ActionResult Index()
         {
             return View();
