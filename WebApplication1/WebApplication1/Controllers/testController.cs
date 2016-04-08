@@ -11,6 +11,7 @@ namespace WebApplication1.Controllers
     public class testController : Controller
     {
 int y=0;
+int z=0;
         // GET: test
         public string getstring()
         {
