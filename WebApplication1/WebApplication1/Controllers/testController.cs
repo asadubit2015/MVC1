@@ -11,6 +11,7 @@ namespace WebApplication1.Controllers
     public class testController : Controller
     {
         // GET: test
+int j=0;
         public string getstring()
         {
             return "University Of karachi";
