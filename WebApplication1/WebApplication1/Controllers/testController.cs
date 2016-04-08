@@ -11,20 +11,19 @@ namespace WebApplication1.Controllers
     public class testController : Controller
     {
         // GET: test
-int j=0;
         public string getstring()
         {
             return "University Of karachi";
         }
         public ActionResult getview()
         {
-int i=0;
             EmployeeListViewModel elvm = new EmployeeListViewModel();
             EmployeeBusinessLayer sbl = new EmployeeBusinessLayer();
             List<Employee> emp = sbl.getemployee();
             List<EmployeeViewModel> list = new List<EmployeeViewModel>();
             foreach(Employee e in emp)
             {
+int z=0;
                 EmployeeViewModel empvmodel = new EmployeeViewModel();
                 empvmodel.name = e.Firstname+e.lastname;
                 empvmodel.salary = e.salary.ToString("C");
