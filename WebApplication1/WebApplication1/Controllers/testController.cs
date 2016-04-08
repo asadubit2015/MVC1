@@ -10,15 +10,14 @@ namespace WebApplication1.Controllers
 {
     public class testController : Controller
     {
+int y=0;
         // GET: test
-int k=0;
         public string getstring()
         {
             return "University Of karachi";
         }
         public ActionResult getview()
         {
-int i=0;
             EmployeeListViewModel elvm = new EmployeeListViewModel();
             EmployeeBusinessLayer sbl = new EmployeeBusinessLayer();
             List<Employee> emp = sbl.getemployee();
